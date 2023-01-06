@@ -305,6 +305,10 @@ section#project-runebook > div.textContainer > p, section#project-runebook > div
 section#project-runebook > div.textContainer > p {
     padding-bottom: 1rem;
 }
+section#project-runebook > div.textContainer > div.tech > span {
+    color: var(--project-header-color-1);
+    border-color: var(--project-header-color-1);
+}
 .tech {
     font-family: "Fira Code", monospace;
     font-size: 0.9rem;
@@ -327,6 +331,10 @@ section#project-chess > div.textContainer > p, section#project-chess > div.textC
 }
 section#project-chess > div.textContainer > p {
     padding-bottom: 1rem;
+}
+section#project-chess > div.textContainer > div.tech > span {
+    color: var(--project-header-color-2);
+    border-color: var(--project-header-color-2);
 }
 span {
     padding: .5rem;
