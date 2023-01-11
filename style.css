@@ -10,7 +10,6 @@
     --project-header-color-1: #00b4d8;
     --project-header-color-2: #9b2226;
     --project-header-color-3: #fb8500;
-    --about-me-header-color: #386641;
     --button-background-color: #fdf0d5;
 }
 * {
@@ -75,10 +74,10 @@ nav > a:hover {
     text-underline-offset: .5rem;
 }
 nav > a.about {
-    color: var(--nav-link-color-1);
+    color: var(--nav-link-color-2);
 }
 nav > a.portfolio {
-    color: var(--nav-link-color-2);
+    color: var(--nav-link-color-1);
 }
 nav > a.contact {
     color: var(--nav-link-color-3);
@@ -185,17 +184,17 @@ section.projectHeader > h1.personal-project-header {
     color: var(--project-header-color-3);
 }
 section.aboutMe > .textContainer {
-    border-left: 1px solid var(--about-me-header-color);
+    border-left: 1px solid var(--nav-link-color-2);
 }
 section.aboutMe > .textContainer > h1 {
     padding-left: 1rem;
-    color: var(--about-me-header-color);
+    color: var(--nav-link-color-2);
 }
 section.aboutMe > .textContainer > p {
     font-size: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--about-me-header-color);
+    border-bottom: 1px solid var(--nav-link-color-2);
 }
 section.aboutMe > .textContainer > p > a.top {
     color: blue;
