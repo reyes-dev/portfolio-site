@@ -54,12 +54,13 @@
                 </div>
             </div>
             <div class="pictureContainer">
-                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" alt="project runebook">
+                <img class="static" src="img/runebook_static.png" alt="project runebook static"><img class="active" src="img/runebook_demo_3.gif" alt="project runebook gif">
+                <p class="undertext">Scroll over image to play gif</p>
             </div>
         </section>
         <section class="projectSection" id="project-chess">
             <div class="pictureContainer">
-                <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="project chess">
+                <script id="asciicast-YLfvoZn30bBaFQEkmPDk6kp6U" src="https://asciinema.org/a/YLfvoZn30bBaFQEkmPDk6kp6U.js" data-startAt="03" data-autoplay=0 async></script>
             </div>
             <div class="textContainer">
                 <h1 class="chess-header">CLI Chess</h1>
@@ -84,11 +85,11 @@
                 <p>            
                     Hey, I'm Jarrod. In 2022, I got the itch to learn a new skill. After a bit of searching I discovered <a target="_blank" href="https://www.theodinproject.com/" class="top">The Odin Project</a> and started building toy apps in JavaScript/Ruby and pushing them to Github. I found it exciting to learn new things every day and build increasingly complex apps. I loved getting into the flow state while solving novel problems, and seeing my projects grow from a single line of code to a complete app. Now, I'm hoping to continue learning at a company.
                     <br /><br />
-                    In 2020 I spent a year in the <a target="_blank" href="https://ccc.ca.gov/" class="ccc">California Conservation Corps</a> building trails, planting trees and participating in the salmon restoration project.
+                    In 2020, I spent a year in the <a target="_blank" href="https://ccc.ca.gov/" class="ccc">California Conservation Corps</a> building trails, planting trees and participating in the salmon restoration project.
                 </p>
             </div>
             <div class="pictureContainer">
-                <img src="https://images.unsplash.com/photo-1505962577034-fc157cf5b274?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" alt="jarrod reyes">
+                <img src="" alt="jarrod reyes">
             </div>
         </section>
         <section class="contactMe" id="contactMe">
@@ -128,6 +129,15 @@
     </aside>
     <script>
         feather.replace()
+        const active = document.querySelector('.active');
+        const static = document.querySelector('.static');
+
+        static.onmouseover = function() {
+            active.style.display = "inline";
+        };
+        static.onmouseout = function() {
+            active.style.display = "none";
+        };
     </script>  
 </body>
 </html>

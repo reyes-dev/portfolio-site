@@ -31,7 +31,7 @@ body {
     background-color: var(--background-color);
     color: var(--paragraph-text-color);
     margin: 0rem 3rem;
-    padding: 3rem 3rem 0rem 3rem;
+    padding-top: 1rem;
 }
 
 main {
@@ -277,8 +277,6 @@ section > div {
     flex: 1 1 0px;
 }
 div.pictureContainer > img {
-    height: 30rem;
-    width: 28rem;    
     border-radius: 5px;
 }
 a.emailLink {
@@ -341,3 +339,18 @@ span {
     border: 1px solid;
     border-radius: 1rem;
 }
+.active {
+    display: none;
+  }
+.static {
+    position: relative;
+    filter: grayscale(80%);
+}
+.static:hover {
+    display: none;
+  }
+  .undertext {
+    text-align: right;
+    font-size: 12px;
+    font-family: 'Source Sans Pro';
+  }
