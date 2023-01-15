@@ -339,6 +339,9 @@ span {
     border: 1px solid;
     border-radius: 1rem;
 }
+.active, .static {
+    height: 640px;
+}
 .active {
     display: none;
   }
