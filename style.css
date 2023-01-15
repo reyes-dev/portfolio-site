@@ -284,6 +284,7 @@ a.emailLink {
     text-orientation: mixed;
 }
 textarea {
+    padding: .5rem;
     resize: vertical;
 }
 footer {
