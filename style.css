@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&family=Prompt&family=Work+Sans&display=swap');
 
 :root {
-    --nav-link-color-1: #F77F00;
-    --nav-link-color-2: #d62828;
-    --nav-link-color-3: #003049;
+    --nav-link-color-1: #F2CC8F;
+    --nav-link-color-2: #E07A5F;
+    --nav-link-color-3: #81B29A;
     --nav-link-color-4: #f2542d;
-    --background-color: #eae2b7;
-    --paragraph-text-color: #101535;
+    --background-color: #3d405b;
+    --paragraph-text-color: #f4f1de;
     --project-header-color-1: #00b4d8;
     --project-header-color-2: #9b2226;
     --project-header-color-3: #fb8500;
-    --button-background-color: #fdf0d5;
+    --button-background-color: #3D405B;
+    --h2-color: #81B29A;
+    --email-link: #81B29A;
+    --email-link-hover: #2a9d8f;
 }
 * {
     margin: 0;
@@ -52,7 +55,7 @@ h1 {
     font-size: 1.6rem;
 }
 h2 {
-    color: darkslateblue;
+    color: var(--h2-color);
 }
 p {
     font-size: 1.4rem;
@@ -90,7 +93,6 @@ nav > a.resume-button {
     text-decoration: none;
 }
 .read-more-button {
-    background-color: var(--button-background-color);
     border-radius: 4px;
     padding: .4rem;
 
@@ -137,12 +139,12 @@ aside.email {
     grid-row: 2 / 3;
 }
 svg, a.emailLink {
-    color: #264653;
+    color: var(--email-link);
     transition: transform .1s ease-out, color .15s ease-out;
 }
 svg:hover, a.emailLink:hover {
     transform: translateY(-2%);
-    color: #2a9d8f;
+    color: var(--email-link-hover);
 }
 section.projectHeader {
     display: flex;
@@ -337,6 +339,9 @@ span {
     padding: .5rem;
     border: 1px solid;
     border-radius: 1rem;
+}
+span:hover {
+    background-color: rgba(12, 215, 255, 0.1);
 }
 .active, .static {
     height: 640px;
