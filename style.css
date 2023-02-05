@@ -304,7 +304,7 @@ section#project-runebook > div.textContainer > p, section#project-runebook > div
 section#project-runebook > div.textContainer > p {
     padding-bottom: 1rem;
 }
-section#project-runebook > div.textContainer > div.tech > span {
+section#project-runebook > div.textContainer > ul.tech > li {
     color: var(--project-header-color-1);
     border-color: var(--project-header-color-1);
 }
@@ -331,16 +331,19 @@ section#project-chess > div.textContainer > p, section#project-chess > div.textC
 section#project-chess > div.textContainer > p {
     padding-bottom: 1rem;
 }
-section#project-chess > div.textContainer > div.tech > span {
+section#project-chess > div.textContainer > ul.tech > li {
     color: var(--project-header-color-2);
     border-color: var(--project-header-color-2);
 }
-span {
+ul {
+    list-style: none;
+}
+li {
     padding: .5rem;
     border: 1px solid;
     border-radius: 1rem;
 }
-span:hover {
+li:hover {
     background-color: rgba(12, 215, 255, 0.1);
 }
 .active, .static {
