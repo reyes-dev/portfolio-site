@@ -7,8 +7,9 @@
     <link rel='stylesheet' href='style.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <title>Jarrod Reyes - Portfolio</title>
+    <script async src="https://cdn.jsdelivr.net/npm/lazyhtml@1.0.0/dist/lazyhtml.min.js" crossorigin="anonymous" debug></script>
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
-<script src="https://unpkg.com/feather-icons"></script>
 <body>
     <header>
         <div class="nameContainer">
@@ -17,9 +18,9 @@
         </div>
 
         <nav>
-            <a href="#projectHeader" class="portfolio">portfolio</a>
-            <a href="#aboutMe" class="about">about</a>
-            <a href="#contactMe" class="contact">contact</a>
+            <a href="#projectHeader" class="portfolio" tabindex="0">portfolio</a>
+            <a href="#aboutMe" class="about" tabindex="0">about</a>
+            <a href="#contactMe" class="contact" tabindex="0">contact</a>
             <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-button">resume</a>
         </nav>
     </header>
@@ -27,6 +28,10 @@
         <a href=""><i data-feather="github"></i></a>
         <a href=""><i data-feather="linkedin"></i></a>
         <a href=""><i data-feather="twitter"></i></a>
+        <div class="line"></div>
+    </aside>
+    <aside class="email">
+        <a href="mailto:jarrodreyesdev@gmail.com" class="emailLink">jarrodreyesdev@gmail.com</a>
         <div class="line"></div>
     </aside>
     <main>
@@ -60,7 +65,7 @@
         </section>
         <section class="projectSection" id="project-chess">
             <div class="pictureContainer">
-                <script id="asciicast-tdpwirKSVvERIMEge1D8T8r2M" src="https://asciinema.org/a/tdpwirKSVvERIMEge1D8T8r2M.js" data-startAt="02" data-autoplay=0 async></script>
+                <script id="asciicast-tdpwirKSVvERIMEge1D8T8r2M" src="https://asciinema.org/a/tdpwirKSVvERIMEge1D8T8r2M.js" data-startAt="02" async data-autoplay="false"></script>
             </div>
             <div class="textContainer">
                 <h1 class="chess-header">CLI Chess</h1>
@@ -123,21 +128,19 @@
         </section>
         <footer>Handcrafted in vanilla HTML/CSS by Jarrod Reyes</footer>
     </main>
-    <aside class="email">
-        <a href="mailto:jarrodreyesdev@gmail.com" class="emailLink">jarrodreyesdev@gmail.com</a>
-        <div class="line"></div>
-    </aside>
+
     <script>
         feather.replace()
         const active = document.querySelector('.active');
         const static = document.querySelector('.static');
-
+        // Play gif on scrollover
         static.onmouseover = function() {
             active.style.display = "inline";
         };
         static.onmouseout = function() {
             active.style.display = "none";
         };
+        // Add tabindex to Asciinema play button div
     </script>  
 </body>
 </html>
