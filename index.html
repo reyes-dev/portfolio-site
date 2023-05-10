@@ -14,7 +14,7 @@
     <header>
         <div class="nameContainer">
             <h1>Jarrod Reyes</h1>
-            <h2>web developer</h2>    
+            <h2>software developer</h2>    
         </div>
 
         <nav>
@@ -45,9 +45,10 @@
             <div class="textContainer">
                 <h1 class="runebook-header">Runebook</h1>
                 <p>
-                    A full-stack mock social media website. Users can create accounts, log in with Facebook, create/delete posts, add/remove friends, search other users and monitor a timeline with their friends' posts. Users can also like posts, upload a personal profile photo, upload images as posts, and comment on other users' posts.
+                    A full-stack mock social media website. Users can create accounts, create/delete posts, add/remove friends, search other users and monitor a timeline with their friends' posts. Users can also like posts, upload a personal profile photo, upload images as posts, and comment on other users' posts.
                 
-                    <br /><br /><a href="/pages/runebook.html" rel="noopener noreferrer" class="read-more-button">Read More</a>
+                    <br /><br /><a href="https://github.com/reyes-dev/odin-facebook" rel="noopener noreferrer" target="_blank" class="read-more-button">GitHub Repo</a>
+                    <a href="https://runebook.fly.dev/" rel="noopener noreferrer" target="_blank" class="read-more-button">Live Demo</a>
                 </p>
                 <ul class="tech">
                     <li><i class="devicon-html5-plain"> HTML</i></li>
@@ -61,8 +62,9 @@
                 </ul>
             </div>
             <div class="pictureContainer">
-                <img class="static" src="img/runebook_static.png" alt="project runebook static"><img class="active" src="img/runebook_demo_3.gif" alt="project runebook gif">
-                <p class="undertext">Scroll over image to play gif</p>
+                <video width="100%" height="auto" controls>
+                    <source src=runebook_demo.mp4 type=video/mp4>
+                </video>
             </div>
         </section>
         <section class="projectSection" id="project-chess">
@@ -74,7 +76,8 @@
                 <p>
                     Chess, written entirely in the Ruby programming language and playable in the command line. Utilizing OOP principles to keep my code clean and modular, I built a program with all the rules of a real game of Chess: an 8x8 board, pieces with restricted movements, pawn promotion, en passant, castling, check and checkmate. Players can save their games and play locally against another human or a CPU.
                     
-                    <br /><br /><a href="/pages/chess.html" rel="noopener noreferrer" class="read-more-button">Read More</a>
+                    <br /><br /><a href="https://github.com/reyes-dev/chess" rel="noopener noreferrer" target="_blank" class="read-more-button">GitHub Repo</a>
+                    <a href="https://replit.com/@reyesdev/chess" rel="noopener noreferrer" target="_blank" class="read-more-button">Live Demo</a>
                 </p>
                 <ul class="tech">
                     <li><i class="devicon-html5-plain"> HTML</i></li>
@@ -90,13 +93,13 @@
             <div class="textContainer">
                 <h1 class="about-header">About Me</h1>
                 <p>            
-                    Hey, I'm Jarrod. In 2022, I got the itch to learn a new skill. After a bit of searching I discovered <a target="_blank" href="https://www.theodinproject.com/" class="top">The Odin Project<span class="sr-only">Opens in new window</span></a> and started building toy apps in JavaScript/Ruby and pushing them to Github. I found it exciting to learn new things every day and build increasingly complex apps. I loved getting into the flow state while solving novel problems, and seeing my projects grow from a single line of code to a complete app. Now, I'm hoping to continue learning at a company.
+                    Hey, I'm Jarrod. In 2022, I got the itch to learn a new skill. After a bit of searching I discovered <a target="_blank" href="https://www.theodinproject.com/" class="top">The Odin Project<span class="sr-only">Opens in new window</span></a> and started building toy apps in JavaScript/Ruby and pushing them to Github. I found it exciting to learn new things every day and build increasingly complex apps. I love getting into the flow state while solving new problems and seeing my projects grow from a single line of code to a complete app. Now, I'm hoping to continue learning at a company.
                     <br /><br />
                     In 2020, I spent a year in the <a target="_blank" href="https://ccc.ca.gov/" class="ccc">California Conservation Corps<span class="sr-only">Opens in new window</span></a> building trails, planting trees and participating in the salmon restoration project.
                 </p>
             </div>
             <div class="pictureContainer">
-                <img src="" alt="jarrod reyes">
+                <!-- <img src="" alt="jarrod reyes"> -->
             </div>
         </section>
         <section class="contactMe" id="contactMe">
@@ -133,16 +136,6 @@
 
     <script>
         feather.replace()
-        const active = document.querySelector('.active');
-        const static = document.querySelector('.static');
-        // Play gif on scrollover
-        static.onmouseover = function() {
-            active.style.display = "inline";
-        };
-        static.onmouseout = function() {
-            active.style.display = "none";
-        };
-        // Add tabindex to Asciinema play button div
     </script>  
 </body>
 </html>

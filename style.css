@@ -24,7 +24,7 @@
 }
 html {
     scroll-behavior: smooth;
-    font-size: 18px;
+    font-size: 20px;
 }
 body {
     display: grid;
@@ -43,7 +43,7 @@ main {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     padding: 0rem 1rem 1rem 1rem;
-    margin: 0rem 1rem 1rem 1rem;
+    margin: 0rem 15vw 0vw 15vw;
     gap: 4rem;
 }
 header {
@@ -57,6 +57,9 @@ h1 {
 }
 h2 {
     color: var(--h2-color);
+}
+p {
+    font-size: 1.2rem;
 }
 a {
     font-family: 'Work Sans';
@@ -166,6 +169,7 @@ section.projectHeader > p {
     text-align: center;
 }
 section.projectSection, section.aboutMe {
+    height: 50vh;
     display: flex;
     gap: 3rem;
 }
@@ -316,6 +320,7 @@ section#project-runebook > div.textContainer > ul.tech > li {
     flex-wrap: wrap;
     gap: 0.5rem;
 }
+
 section#project-chess > div.textContainer {
     border-right: 1px solid var(--project-header-color-2);
     /* box-shadow: rgba(0, 0, 0, 0.15) -1.95px 1.95px; */
@@ -341,8 +346,11 @@ li {
     border: 1px solid;
     border-radius: 1rem;
 }
-li:hover {
+section#project-runebook > div.textContainer > ul.tech > li:hover {
     background-color: rgba(12, 215, 255, 0.1);
+}
+section#project-chess > div.textContainer > ul.tech > li:hover {
+    background-color: rgba(155, 34, 38, 0.1);
 }
 .active, .static {
     height: 640px;
